@@ -1,0 +1,7 @@
+UsePAM yes
+AcceptEnv LANG LC_*
+Subsystem	sftp	internal-sftp
+X11Forwarding no
+AllowTcpForwarding no
+ChrootDirectory /home
+ForceCommand internal-sftp -d /user/files
